@@ -1,6 +1,6 @@
 # Portfolio-architecte-sophie-bluel
 
-Code du projet 6 d'intégrateur web.
+Création d'une page web dynamique avec JavaScript
 
 ## Information pour le lancer le code
 
