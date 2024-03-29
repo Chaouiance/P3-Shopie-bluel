@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="js/script.js" defer></script>
+	<script src="https://kit.fontawesome.com/3d771a9314.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="edition">
+	<a href="#modal"><i class="far fa-edit"></i> modifier</a>
+</div>
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li>projets</li>
+			<li>contact</li>
+			<li><a href="index.html">logout</a></li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+<main id="main">
+	<section id="introduction">
+		<figure>
+			<img src="./assets/images/sophie-bluel.png" alt="">
+		</figure>
+		<article>
+			<h2>Designer d'espace</h2>
+			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+		</article>
+	</section>
+	<section id="portfolio">
+		<div class="projetsModif">
+			<h2>Mes Projets</h2>
+			<a href="#modal"><i class="far fa-edit"></i> modifier</a>
+		</div>
+		<div class="gallery">
+		</div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Vous avez un projet ? Discutons-en !</p>
+		<form action="#" method="post">
+			<label for="name">Nom</label>
+			<input type="text" name="name" id="name">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Envoyer">
+		</form>
+	</section>
+</main>
+
+<div id="modal" aria-hidden="true">
+	<h3>Galerie photo</h3>
+	<div class="articlePhotos">
+	</div>
+	<button id="ajoutPhoto">Ajouter une photo</button>
+</div>
+
+<div id="modalAjout" aria-hidden="true">
+	<div class="modal-wrapper">
+		<div class="top-btn">
+		  <button class="back">
+			<i class="fa-solid fa-arrow-left"></i>
+		  </button>
+		  <button class="close">
+			<i class="fa-solid fa-xmark"></i>
+		  </button>
+		</div>
+		<h3>Ajout photo</h3>
+		<div class="form-wrapper">
+			<form action="#" method="post">
+			  <div class="content">
+				<i class="fa-regular fa-image"></i>
+				<label for="content">+ Ajouter photo</label>
+				<input type="file" name="content" id="content">
+				<div id="image-container">
+					<img id="preview-image" class="preview-image" src="#" alt="Aperçu de l'image" style="display: none;">
+				  </div>
+			  </div>
+			  <div class="title-content">
+				<label for="title">Titre</label>
+				<input type="text" name="title" id="title">
+			  </div>
+			  <div class="cat-content">
+				<label for="category">Catégorie</label>
+				<select id="categoryForm" name="category">
+				  <option value=""></option>
+				  <option value="1" data-id="1">Objet</option>
+				  <option value="2" data-id="2">Appartement</option>
+				  <option value="3" data-id="3">Hôtels & restaurants</option>
+				</select>
+			  </div>
+			  <hr>
+			  <div class="btn-wrapper">
+				<button type="submit" class="btn" id="sendWorks">Valider</button>
+			  </div>
+			</form>
+		  </div>
+	  </div>
+</div>
+
+<footer>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>
