@@ -12,7 +12,7 @@ Création d'une page web dynamique avec JavaScript
 
   - Index.html : contient le code html base du site 
   - login.html : contient le code html de la page login
-  - Admin.html : contient le code html de la page admin avec la modal 
+  - admin.html : contient le code html de la page admin avec la modal 
   - le dossier JS : contient le login.js & script.js représente le code JavaScript du projet 
 #
 
