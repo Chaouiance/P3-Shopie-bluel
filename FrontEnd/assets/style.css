@@ -184,6 +184,9 @@ nav li {
   padding: 0 10px;
   font-size: 1.2em;
 }
+.projets, .contact {
+  cursor: pointer;
+}
 
 nav a {
   text-decoration: inherit;
